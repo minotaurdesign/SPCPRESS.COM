@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{QUERY_STRING} Product_Code=([^&]+)
+RewriteRule ^merchant\.mvc$ http://www.spcpress.com/Merchant2/%1.php [R=301,L] 

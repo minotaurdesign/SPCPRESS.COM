@@ -1,0 +1,5 @@
+ErrorDocument 404 /error/404.html
+RedirectMatch 301 ^/Merchant2/.*$ /finder.php
+RewriteRule ^Merchant2/merchant/.*$ /finder.php
+Redirect /Merchant2/ http://www.spcpress.com/
+

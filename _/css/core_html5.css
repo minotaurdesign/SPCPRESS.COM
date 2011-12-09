@@ -1,0 +1,539 @@
+* {
+    font-family:  Verdana, Helvetica, Lucida Sans,sans-serif;
+}
+
+/*- self-clearing floats ----------*/
+
+.mod:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* html reset 
+html,body,div,span,object,iframe,.h1,h2,h3,h4,h5,h6,p,blockquote,pre,.abbr,address,cite,code,.del,dfn,em,img,ins,kbd,q,samp,.small,strong,sub,sup,var,.b,i,.dl,dt,dd,ol,ul,li,.fieldset,form,label,legend,.table,caption,tbody,tfoot,thead,tr,th,td,.article,aside,figure,footer,header,.hgroup,menu,nav,section,menu,.time,mark,audio,video {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;} article,aside,figure,footer,header,hgroup,nav,section{display:block}
+nav ul{list-style:none}blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration: line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+*/
+html{-webkit-font-smoothing:antialiased}
+
+body {
+    width: 100%; 
+	margin: 0px auto;
+	background: #526b8e url(../img/body_bg_sigma_tile.gif) repeat fixed;
+	padding-bottom: 18px;
+}
+/* links */
+a:link {text-decoration:none; font-weight: bold;}    
+a:visited {text-decoration:none;} 
+a:hover {text-decoration:underline;} 
+a:active {text-decoration:none;} 
+
+#wrap {
+	width: 990px;
+	margin: 0 auto;
+	padding: 0 4px 10px 4px;
+	border: solid white;
+	border-width: 0px 2px 2px 2px;
+	background: #0c1727;
+}
+
+#brand {
+    width: 988px; 
+	height: 109px; 
+	margin: 0px auto;
+	background: #5B69BF url(../img/header_bg_tile.jpg) repeat-x top left;
+	/* border: 1px solid #fff;
+	border-width:  0 0 1px 0; */
+}
+
+#logo {
+    background: transparent url(../img/header_bg.png) no-repeat 0 0;
+	display: block;
+	width: 662px;
+	height: 109px;
+	overflow: hidden;
+	float: left;
+	margin: 0 0 0 0;
+}
+
+#logo a{display:block;height:109px}
+#logo span{text-indent:-9999px;display:block}
+
+nav#main  {
+    width: 988px; 
+	margin: 0px auto;
+}
+nav#main ul {
+    list-style: none; 
+	padding: 7px 0 5px 0;  /* 10px 0; */
+	display: block;
+	background: #0c1727;
+	/* background: #1D1698; 
+	border-bottom: 1px solid #a8b0c3;*/
+}
+
+nav#main ul li {
+    display: inline; 
+	padding: 4px 22px 4px 26px; /* 11px 22px 10px 26px; */
+    line-height: 20px; 
+	border-right: 0px solid #253040;
+}
+
+nav#main ul li a {
+    color: #ccc; 
+    font-size: 18px; 
+	font-weight: bold;
+	text-shadow: 2px 2px 4px #000;
+	padding: 0 1px;
+}
+
+nav#main ul li a:hover {
+    color: #fff;
+	text-shadow: 2px 2px 2px #000;
+}
+body#books li#books a:hover,body#home li#home a:hover, body#seminars li#seminars a:hover, body#other_products li#other_products a:hover, body#reading_room li#reading_room a:hover {color: #829dc8;/* #5B69BF; */text-decoration: none; cursor: default;}
+
+body#books li#books, body#home li#home, body#seminars li#seminars, body#other_products li#other_products, body#reading_room li#reading_room {
+	background: #000; /* 	background: #0c1727; */
+}
+
+/* sidebar styles */
+aside {	
+	margin: 0; padding: 0;
+	float: right;
+	width: 200px;
+	color: #ccc;
+	text-align: left;
+/*	background: green;*/
+}
+aside a, aside p {
+	margin: 6px 12px;
+	color: #fff;
+}
+aside p a {margin: 0; color: #829dc8; /*#5B69BF; */ }
+aside p {
+	line-height: 1.2em;
+	font-weight: normal;
+	font-size: 13px;
+}
+aside h1 {
+	color: #fff; 
+	background-color: #b6092d; /* #FF0000;*/
+	padding: 10px 0;
+	margin: 15px 0;
+	font-size: 15px;
+}
+.sidebar_topper {margin-top: 5px;}
+aside h1 span {	margin: 0 12px;}
+aside ul {
+	list-style: none;
+	margin: 12px;
+	font-size: 15px;
+}
+aside ul li  {
+	line-height: 21px;
+	margin: 3px 0;
+}
+aside ul.address {font-size: 13px;} /* homepage sidebar address */	
+aside ul.address li {	line-height: 15px; margin: 2px 0;}
+aside dl dd { 
+	line-height: 16px;
+	margin: 4px 0;
+}
+aside dl {
+	list-style: none;
+	margin: 12px;
+	font-size: 15px;
+}
+aside dl dt {
+	margin: 8px 0 0 0;
+	color: #fff;
+}
+
+.seminar_title {
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 5px;
+}
+aside .seminar_title a {
+	margin: 6px 0;
+	color: #fff;
+}
+/* end sidebar styles */
+
+section {
+	width: 767px;
+    padding: 5px 8px 14px 8px;  
+	margin: 5px 2px 2px 2px;
+	background-color: #eee;  
+    color: #999;  
+	-moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+section header h1 {
+    font-size: 19px; 
+	margin: 18px 6px 18px 6px;
+	color: #a2112f;
+}
+
+section strong {
+	font-weight: bold;
+	margin: 8px 0 0 0;
+	color:  #a2112f;
+}
+section em {
+	font-weight: bold;
+	font-style: italic;
+	color:  #000066; 
+}
+section p {
+	width: 80%;
+    font-size: 15px; 
+	margin: 8px 20px 15px 6px; 
+	color: #000;
+	line-height: 22px; /* 18px; */
+}
+
+section p a {color:  #26356e; /* #330099; */}
+section ul {
+	list-style: disc;
+	margin: 4px 30px 12px 30px; 
+	font-size: 14px;
+	color:#841839; 
+}
+section ul li span {
+    line-height: 18px;
+	color: #000;
+}
+
+section#home ul {
+	padding-left: 25px;
+}
+
+section#home header img {
+	border: 1px solid #ccc;
+	padding: 3px; 
+	background: #fff;
+	float: right;
+	margin: 0 20px;
+}
+section ul li a, section.instructions ul li span {
+   	color:  #000; /* #330099;  */
+	text-decoration: none;
+	font-weight: bold;
+}
+section.instructions ul li, section#home ul li, section.seminar ul li  {
+	margin: 9px 0;
+}
+
+section ul li a:hover {
+    color: #841839;
+}
+
+/* book & seminar shared styles */
+section.book header h1  {   
+	font-size: 22px;
+	font-style: italic; 
+	/* margin: 9px 5px 3px 5px; */
+	margin: 18px 6px 6px 6px;
+}
+
+section.book header h2, section.seminar header h2 {   
+	font-size: 16px; 
+	font-style: italic; 
+	margin: 3px 5px 0 5px;
+	color: #35455d;
+}
+section.book header h3, section.seminar header h3 {   
+	font-size: 16px; 
+	margin: 12px 5px 18px 5px;
+	color: #a2112f;
+}
+section h4 a {   
+	font-size: 16px; 
+	margin: 0 0 0 7px;
+	color:#a2112f;
+} 
+section.seminar h4, section.book h4 {   
+	font-size: 16px; 
+	margin: 14px 5px 0px 5px;
+	color:#841839;
+}
+section.seminar h5, section.book h5 {
+	font-size: 16px; 
+	margin: 20px 5px 8px 5px;
+	color:#841839;
+}
+
+section.book p, section.seminar p {
+	margin: 5px 20px 6px 6px; 
+}
+
+/* book only styles */
+
+
+section.book ul#bookdata {
+	border: 1px solid #000;
+	margin: 12px 6px;
+	width: 50%;
+	padding: 20px;
+	list-style: none; 
+	font-size: 14px;
+	color:#841839; 
+}
+section.book ul#bookdata li {
+	margin: 5px 0;
+	line-height: 120%;
+}
+
+section.book #bookdata a {	
+	font-weight: normal;
+	font-size: 16px;
+	margin: 5px 0;
+	color:#000066;
+}
+section.book figure img {
+	margin: 10px 5px 10px 15px;
+	padding: 5px;
+	border: 1px solid #000;
+	float: right;
+}
+section.book h3 {
+	font-size: 16px; 
+	margin: 12px 5px 1px 5px;
+	color: #a2112f;
+}
+
+/* seminar specific styles */
+section.seminar p {
+	margin: 10px 20px 15px 6px; 
+}
+cite {
+	display: block; 
+	color: #000;/*#26356e;  #841839; */
+	font-size: 14px; 
+	margin: 10px 20px 6px 24px; 
+	line-height: 19px;
+}
+
+section.seminar header h1 {
+	color: #000066;
+}
+section.seminar header h3 {
+	color:#841839;
+	padding-top: 12px;
+	font-size: 18px; 
+}
+
+section h4 a {   
+	font-size: 16px; 
+	margin: 0 0 0 7px;
+	color:#a2112f;
+} 
+section.seminar h4 {   
+	font-size: 16px; 
+	margin: 14px 5px 0px 5px;
+	color:#841839;
+}
+section.seminar h5 {
+	font-size: 16px; 
+	margin: 20px 5px 8px 5px;
+	color:#841839;
+}
+
+section.seminar ul li span {
+   	color:  #000; /*#330099; */ 
+	font-weight: bold;
+}
+
+section.seminar ul {
+	margin: 6px;
+	padding: 2px 30px; 
+}
+section #brag {height: 260px;}
+
+section.seminar .seminar_books li a {
+    font-style: italic;
+	color: #000066;
+}
+section.seminar .seminar_books li a:hover {
+	color:#841839;
+}
+
+section img#don {
+	border: 1px solid #ccc;
+	padding: 3px; 
+	background: #fff;
+	float: left;
+	margin: 0 20px;
+}
+
+section ul#orderinfo li {margin: 8px 0;}
+
+/* book landing page */
+div.booklist figure, div.author figure { /* style image wrapper */
+	float:left;
+	width: 155px;
+	min-height: 180px;
+	margin: 12px 7px;
+	padding: 20px 10px 13px 10px; 
+	border: 1px solid silver;
+	text-align:center;
+}
+div.author figure { padding: 18px 10px 6px 10px; }
+div.booklist figcaption, div.author figcaption {
+	font-size: 11px;
+	font-style: italic;
+	color: #330099;
+	line-height: 15px;
+}
+div.booklist figure figcaption span, div.author figure figcaption span {
+	display: block;
+	color:#841839;
+	font-style: normal;
+}
+div.author figure {	min-height: 175px;}
+div.booklist figure img, div.author figure img {
+	width:  70px; /**adjust width to photo**/
+	height: 100px; /**adjust height to photo**/
+	margin-bottom: 8px;
+	border: 1px black solid;
+	padding: 2px;
+	background: #fff;
+	/**CSS3 drop shadows**/
+	-moz-box-shadow: 3px 3px 5px #666;
+	-webkit-box-shadow: 3px 3px 5px #666;
+	-khtml-box-shadow: 3px 3px 5px #666;
+	box-shadow: 3px 3px 5px #666;
+}
+div.booklist a:hover, div.booklist figure:hover figcaption, div.author a:hover, div.author figure:hover figcaption {
+	color:#841839;
+}
+div.author figure:hover figcaption span {color: #000;}
+p.indent { padding-left: 32px;}
+ul.no_bullets {list-style: none;}
+
+/* contact us form */
+section.contact_form form {	margin: 6px 20px 6px 6px; }
+section.contact_form form input, section.contact_form form textarea {
+	display: block;
+	width: 500px;
+	margin: 2px 0 8px 0;
+}
+section.contact_form form textarea {height: 200px;}
+
+
+/* footer styles */
+footer {
+	width: 785px;
+	margin: 10px 0
+}
+footer section {
+	width:186px;
+    color: #ddd;  
+	-moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin: 4px 0 0 2px;
+	padding: 5px 8px 5px 8px; 
+}
+footer #blurbs {
+	text-align: left;
+	border: 5px double #526B8E;
+	padding: 9px 12px 9px 12px; 
+	margin: 7px 14px 7px 0;
+	background: #000066;
+}
+#blurbs h6 {color: #fff; font-size: 110%; margin: 5px;}
+#blurbs p { width: 100%; margin-right: 5px; color: #eee;}
+footer#contact_us #designed_by, footer#contact_us #copyright, footer#blurbs{width: 370px;}
+footer#contact_us #designed_by {margin-right: 6px;}
+footer a {
+	color: #fff;
+}
+
+footer section h1 {
+    font-size: 13px; 
+	margin: 4px 0 7px 0;
+	color: #0c1828;
+}
+
+#copyright, #designed_by {
+	float: right;
+	margin: 4px 2px 4px 0;
+	height: 84px;
+	background-color: #5b779c;
+	text-align: center;
+	border: 1px solid #ccc;
+	color: #26356E;
+}
+#copyright {
+  background: #6685b6 url(../img/footer_sigma_bw.png) no-repeat bottom center;
+  /* background-image: -moz-radial-gradient(center 45deg, circle, white 0%, #26356e 100%); */
+}
+#designed_by {
+  background: #6685b6 url(../img/footer_minotaur_focused_blue.png) no-repeat bottom center;
+  /* background-image: -moz-radial-gradient(center 45deg, circle, black 0%, #26356e 100%); */
+}
+#designed_by a, #designed_by p {margin: 20px 0; color: #26356E;}
+#designed_by h1 {color: #fff;margin-top: 12px;}
+/* footer form */
+footer address {color: #fff; font-size: .8em; line-height: 120%; padding-top: 10px;}
+#contactus_form {
+	width: 534px;
+	float: left;
+	height: 190px;
+	background-color: #829dc8;
+	background-image: -moz-radial-gradient(center 45deg, square, #999 0%, #009999 100%);
+	padding-left: 30px;
+}
+
+footer form {
+	font-size: 11px;
+	color: #26356e;  
+}
+footer table {width: 500px;}
+footer form input {width: 170px; margin: 0 10px 4px 0;}
+footer form label {	 display: block; margin: 0 0 2px 0;}
+footer form submit {margin-top: 15px;}
+footer form textarea {
+	width: 325px;
+	height: 70px;
+
+}
+footer form input.submit {width: 120px; margin: 0 10px 15px 5px; display: inline;}
+footer form label.captcha {margin: 0 0 2px 5px; display: inline; }
+footer form input.captcha {width: 210px; margin: 2px 5px 5px 5px; display: inline;}
+
+
+
+
+
+#w3validator {margin: 10px 0 0 0;}
+
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+* html .clearfix {
+	height: 1%;
+}

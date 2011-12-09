@@ -1,0 +1,7 @@
+
+
+redirect /Merchant2/merchant.mvc http://66.135.36.47/finder.php
+redirect 301 /Merchant2/merchant.mvc http://66.135.36.47/books.php 
+RewriteEngine on
+RewriteRule ^Merchant2/test\.php$ http://66.135.36.47/redirected.php [NC,R=301,L]
+RewriteRule ^/Merchant2/merchant\.mvc$ http://66.135.36.47/finder.php  [R=301,L] 
